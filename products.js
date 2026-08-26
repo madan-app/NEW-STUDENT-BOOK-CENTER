@@ -63,7 +63,7 @@ const PRODUCTS = [
     price: 180,
     oldPrice: 220,
     discount: "18% OFF",
-    image: "images/diary.jpg",
+    image: "images/tyt.jpg",
     images: ["images/diary.jpg", "images/diary-2.jpg"],
     description: "Hardbound daily diary with date pages, ideal for planning, notes and personal journaling.",
     newArrival: true,
