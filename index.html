@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>New Student Book Center — Stationery, Toys, TWS &amp; More</title>
+<meta name="description" content="New Student Book Center, Bapuji Nagar, Bengaluru — stationery, toys, TWS &amp; audio, chargers, SIM cards and DTH. Order directly on WhatsApp." />
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">NSBC</span>
+      <span class="brand-name">New Student<br>Book Center</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#new-arrivals">New Arrivals</a>
+      <a href="#best-sellers">Best Sellers</a>
+      <a href="#shop">All Products</a>
+      <a href="#location">Location</a>
+      <a href="#policies">Policies</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search products">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Open cart">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="21" r="1.3" fill="currentColor"/><circle cx="18" cy="21" r="1.3" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- search bar (hidden until toggled) -->
+  <div class="search-bar" id="searchBar">
+    <div class="container">
+      <input type="text" id="searchInput" placeholder="Search products, e.g. TWS, F1, notebook…" autocomplete="off" />
+    </div>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-slideshow" id="heroSlideshow">
+      <div class="hero-slide active" style="background-image:url('images/tws.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/f1.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/spiderman.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/notebook.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/neckband.jpg')"></div>
+      <div class="hero-slideshow-dots" id="heroSlideshowDots"></div>
+    </div>
+    <div class="hero-text">
+      <p class="eyebrow">Bapuji Nagar, Bengaluru</p>
+      <h1>Everything you need,<br>just a WhatsApp away.</h1>
+      <p class="hero-copy">Shop stationery, toys, TWS &amp; audio, chargers and everyday essentials. Add products to your cart and order directly through WhatsApp — no card, no checkout forms.</p>
+      <div class="hero-actions">
+        <a href="#shop" class="btn btn-primary">Shop Now →</a>
+        <a id="heroWhatsapp" href="#" target="_blank" rel="noopener" class="btn btn-ghost">📲 WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-tab" aria-hidden="true">Est. shop · order by chat</div>
+</section>
+
+<!-- ============ NEW ARRIVALS BANNER ============ -->
+<section class="banner banner-new" id="new-arrivals">
+  <div class="container banner-inner">
+    <div>
+      <p class="banner-tag">🆕 NEW ARRIVALS</p>
+      <p class="banner-sub">Fresh products just added</p>
+    </div>
+    <a href="#newArrivalsGrid" class="btn btn-line">Explore →</a>
+  </div>
+</section>
+<section class="product-section">
+  <div class="container">
+    <div class="product-grid" id="newArrivalsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ BEST SELLERS BANNER ============ -->
+<section class="banner banner-best" id="best-sellers">
+  <div class="container banner-inner">
+    <div>
+      <p class="banner-tag">⭐ BEST SELLERS</p>
+      <p class="banner-sub">Popular products customers love</p>
+    </div>
+    <a href="#bestSellersGrid" class="btn btn-line">Shop Now →</a>
+  </div>
+</section>
+<section class="product-section">
+  <div class="container">
+    <div class="product-grid" id="bestSellersGrid"></div>
+  </div>
+</section>
+
+<!-- ============ SHOP / ALL PRODUCTS ============ -->
+<section class="product-section shop-section" id="shop">
+  <div class="container">
+    <div class="section-head">
+      <h2>Shop by Category</h2>
+      <p class="section-sub">Browse everything, or filter by what you need</p>
+    </div>
+
+    <div class="category-chips" id="categoryChips"></div>
+
+    <p class="results-count" id="resultsCount"></p>
+    <div class="product-grid" id="allProductsGrid"></div>
+    <p class="empty-state" id="emptyState" hidden>No products found. Try a different search or category.</p>
+  </div>
+</section>
+
+<!-- ============ STORE LOCATION ============ -->
+<section class="location-section" id="location">
+  <div class="container location-inner">
+    <div class="location-text">
+      <p class="eyebrow">Visit the shop</p>
+      <h2>New Student Book Center</h2>
+      <p class="address">📍 #76, 4th Main Rd, Bapuji Nagar,<br>Bengaluru, Karnataka 560026</p>
+      <div class="location-actions">
+        <a href="https://maps.app.goo.gl/pV2Trx1P8Lyo2HLn9" target="_blank" rel="noopener" class="btn btn-primary">📍 Get Directions</a>
+        <a id="locationWhatsapp" href="#" target="_blank" rel="noopener" class="btn btn-ghost">📲 WhatsApp Us</a>
+      </div>
+    </div>
+    <a class="location-map-card" href="https://maps.app.goo.gl/pV2Trx1P8Lyo2HLn9" target="_blank" rel="noopener">
+      <div class="map-placeholder">
+        <span>🗺️</span>
+        <span>Open Location →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ POLICIES ============ -->
+<section class="policies-section" id="policies">
+  <div class="container">
+    <div class="section-head">
+      <h2>Good to know</h2>
+      <p class="section-sub">Shipping, returns and warranty — in plain language</p>
+    </div>
+    <div class="policy-grid">
+      <div class="policy-card">
+        <h3>🚚 Shipping Policy</h3>
+        <p id="shippingPolicyText">Delivery availability, charges and estimated delivery time will be confirmed before the order is finalized. Local pickup may be available.</p>
+      </div>
+      <div class="policy-card">
+        <h3>↩️ Return Policy</h3>
+        <p id="returnPolicyText">Returns or replacements are subject to product eligibility and verification. Products damaged due to misuse, physical damage, unauthorized repair or normal wear may not qualify for return or replacement.</p>
+      </div>
+      <div class="policy-card">
+        <h3>🛡️ Warranty</h3>
+        <p id="warrantyPolicyText"><strong>U&amp;I TWS: 6 Months Warranty.</strong> Warranty is applicable only to eligible manufacturing defects. Physical damage, water/liquid damage, accidental damage, misuse, unauthorized repair/modification and normal wear are not covered. Warranty period may vary by product — ask in-store or on WhatsApp for details.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <p class="brand-name footer-brand">New Student<br>Book Center</p>
+      <p class="footer-address">#76, 4th Main Rd, Bapuji Nagar,<br>Bengaluru, Karnataka 560026</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-heading">Shop</p>
+      <a href="#new-arrivals">New Arrivals</a>
+      <a href="#best-sellers">Best Sellers</a>
+      <a href="#shop">All Products</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-heading">Contact</p>
+      <a id="footerWhatsapp" href="#" target="_blank" rel="noopener">📲 WhatsApp: +91 99003 00409</a>
+      <a href="https://maps.app.goo.gl/pV2Trx1P8Lyo2HLn9" target="_blank" rel="noopener">📍 Google Maps</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-heading">Policies</p>
+      <a href="#policies">Shipping</a>
+      <a href="#policies">Returns</a>
+      <a href="#policies">Warranty</a>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="year"></span> New Student Book Center. All rights reserved.</p>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-header">
+    <h2>Shopping Cart</h2>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <span id="cartTotal">₹0</span>
+    </div>
+    <button class="btn btn-primary btn-block" id="cartWhatsappBtn">📲 Order on WhatsApp</button>
+    <button class="btn btn-line btn-block" id="cartClearBtn">Clear Cart</button>
+  </div>
+</aside>
+
+<!-- ============ PRODUCT DETAILS MODAL ============ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="product-modal" id="productModal" role="dialog" aria-modal="true">
+    <button class="icon-btn modal-close" id="modalClose" aria-label="Close">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ============ IMAGE LIGHTBOX (full-size photo view) ============ -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <div class="lightbox-content">
+    <button class="icon-btn lightbox-close" id="lightboxClose" aria-label="Close image">✕</button>
+    <img id="lightboxImage" src="" alt="Product photo">
+  </div>
+</div>
+
+<!-- toast for "added to cart" feedback -->
+<div class="toast" id="toast"></div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
