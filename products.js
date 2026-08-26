@@ -302,6 +302,19 @@ const PRODUCTS = [
     description: "Airtel AirFiber wireless broadband connection — enquire in-store for plans and availability.",
     newArrival: true,
     bestSeller: false
+  },
+    {
+    id: 22,
+    name: "Airtel AirFiber",
+    category: "undertaker",
+    price: 50,
+    oldPrice: 30,
+    discount: 5,
+    image: "images/airfiber.jpg",
+    images: ["images/airfiber.jpg", "images/airfiber-2.jpg"],
+    description: "Airtel AirFiber wireless broadband connection — enquire in-store for plans and availability.",
+    newArrival: true,
+    bestSeller: true
   }
   // ADD NEW PRODUCTS ABOVE THIS LINE — remember the comma after the previous block!
 ];
