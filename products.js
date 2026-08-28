@@ -167,8 +167,8 @@ const PRODUCTS = [
     price: 449,
     oldPrice: 599,
     discount: "25% OFF",
-    image: "images/test.webp",
-    images: ["images/neckband.jpg", "images/neckband-2.jpg"],
+    image: "images/twss.webp",
+    images: ["images/twss.webp", "images/test.webp"],
     description: "Lightweight Bluetooth neckband with magnetic earbuds, long battery life and clear call quality.",
     newArrival: false,
     bestSeller: true
