@@ -49,7 +49,7 @@ const PRODUCTS = [
     category: "Pouches",
     price: 275,
     oldPrice: 375,
-    discount: 27%,
+    discount: "27% OFF",
     image: "images/CAP.WEBP",
     images: ["images/CAP.WEBP"],
     description: "BEST FOR DAILY SCHOOL USE FOR KIDS, 3D CAPTAIN AMERICA POUCH, HARD SHELL FOR BETTER PROTECTION.",
