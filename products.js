@@ -32,15 +32,15 @@
 const PRODUCTS = [
   {
     id: 1,
-    name: "Ruled Notebook (200 pages)",
-    category: "Stationery",
-    price: 60,
-    oldPrice: 75,
+    name: "CUTE BROWNY POUCH ",
+    category: "Pouches",
+    price: 350,
+    oldPrice: 280,
     discount: "20% OFF",
-    image: "images/notebook.jpg",
-    images: ["images/notebook.jpg", "images/notebook-2.jpg"],
-    description: "Long-lasting ruled notebook, 200 pages, smooth paper for everyday writing. Great for school, college and office use.",
-    newArrival: false,
+    image: "images/BROWNY.WEBP",
+    images: ["images/BROWNY.WEBP", "images/BROWNY.WEBP"],
+    description: "Premium Browny pouch with keychain attached.",
+    newArrival: true,
     bestSeller: true
   },
   {
