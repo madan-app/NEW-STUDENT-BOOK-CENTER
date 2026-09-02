@@ -305,7 +305,7 @@ const PRODUCTS = [
   },
     {
     id: 22,
-    name: "Airtel AirFiber",
+    name: "CUTE BROWNY",
     category: "undertaker",
     price: 50,
     oldPrice: 30,
