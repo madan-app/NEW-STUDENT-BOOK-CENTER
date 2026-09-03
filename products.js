@@ -279,7 +279,7 @@ const PRODUCTS = [
   },
     {
     id: 20,
-    name: "FORMULA 1 DIECAST CARS",
+    name: "FORMULA 1 DIECAST CARS (1pc)",
     category: "DIE-CAST CARS",
     price: 350,
     oldPrice: 450,
