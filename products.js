@@ -285,8 +285,8 @@ const PRODUCTS = [
     oldPrice: 450,
     discount: "22% OFF",
     image: "images/F1R.WEBP",
-    images: ["images/F1R.WEBP,images/F1Y.WEBP,images/F1O.WEBP,images/F1B.WEBP,"],
-    description: "PREMIUM CUTE ORANGE RABBIT POUCH, BEST FOR GIFING FOR YOUR KIDS, PINK COLOR, HIGH QUALITY.",
+    images: ["images/F1R.WEBP","images/F1Y.WEBP","images/F1O.WEBP","images/F1B.WEBP"],
+    description: "PREMIUM DIE-CAST F1 RACING CARS WITH PULLBACK FUNCTION, RUBBER TYRES FOR EXTRA SPEED FOR EVERY PULL.",
     newArrival: false,
     bestSeller: true
   }
