@@ -276,6 +276,19 @@ const PRODUCTS = [
     description: "PREMIUM CUTE ORANGE RABBIT POUCH, BEST FOR GIFING FOR YOUR KIDS, PINK COLOR, HIGH QUALITY.",
     newArrival: false,
     bestSeller: false
+  },
+    {
+    id: 20,
+    name: "FORMULA 1 DIECAST CARS",
+    category: "DIE-CAST CARS",
+    price: 350,
+    oldPrice: 450,
+    discount: "22% OFF",
+    image: "images/F1R.WEBP",
+    images: ["images/F1R.WEBP,images/F1Y.WEBP,images/F1O.WEBP,images/F1B.WEBP,"],
+    description: "PREMIUM CUTE ORANGE RABBIT POUCH, BEST FOR GIFING FOR YOUR KIDS, PINK COLOR, HIGH QUALITY.",
+    newArrival: false,
+    bestSeller: true
   }
   // ADD NEW PRODUCTS ABOVE THIS LINE — remember the comma after the previous block!
 ];
